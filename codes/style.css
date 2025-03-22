@@ -1,0 +1,431 @@
+/*fonts*/
+@font-face {
+    font-family: Abril;
+    src: url(../fonts/Abril_Fatface/AbrilFatface-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+/*icons*/
+@font-face {
+    font-family: 'icomoon';
+    src: url('../icons/fonts/icomoon.eot?80hc4u');
+    src: url('../icons/fonts/icomoon.eot?80hc4u#iefix') format('embedded-opentype'),
+        url('../icons/fonts/icomoon.ttf?80hc4u') format('truetype'),
+        url('../icons/fonts/icomoon.woff?80hc4u') format('woff'),
+        url('../icons/fonts/icomoon.svg?80hc4u#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tiktok:before {
+    content: "\e900";
+}
+
+.icon-x:before {
+    content: "\e901";
+}
+
+.icon-expand_more:before {
+    content: "\e902";
+}
+
+.icon-expand_less:before {
+    content: "\e903";
+}
+
+.icon-facebook:before {
+    content: "\ea90";
+}
+
+.icon-instagram:before {
+    content: "\ea92";
+}
+
+.icon-youtube:before {
+    content: "\ea9d";
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --primery-color: #293f46;
+
+}
+
+body {
+    font-family: Roboto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: Abril;
+}
+
+input,
+textarea,
+button {
+    font-family: Roboto;
+}
+
+/*SCROLLBAR*/
+::-webkit-scrollbar {
+    width: 12x;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #5e5d5d;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
+
+::-webkit-scrollbar-button:single-button:decrement {
+    border: 8px solid transparent;
+    border-bottom-color: #5e5d5d;
+}
+
+::-webkit-scrollbar-button:single-button:increment {
+    border: 8px solid transparent;
+    border-top-color: #5e5d5d;
+}
+
+/*HEADER*/
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 14%;
+    padding: 26px 10px;
+    border-bottom: 2px solid #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 100%;
+}
+
+/*MENU*/
+nav ul {
+    width: 70%;
+    display: flex;
+    border: 2px solid #ffffff;
+    border-top: none;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    height: 100%;
+}
+
+nav ul li a {
+    display: flex;
+    gap: 7px;
+    height: 100%;
+    align-items: center;
+    padding: 0 25px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*HOVER*/
+.collections {
+    position: relative;
+}
+
+.collections-menu {
+    width: 105%;
+    position: absolute;
+    top: 140%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    color: #121213;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.collections-menu span {
+    display: block;
+    padding: 20px 10px;
+    font-family: Roboto;
+    background-color: #ffffff;
+    opacity: 0.4;
+    text-transform: uppercase;
+    font-size: 13px;
+    transition: 0.5s;
+}
+
+.collections-menu span:hover {
+    opacity: 1;
+    color: #78bdc6;
+}
+
+.collections:hover .collections-menu {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+}
+
+/*ICONS*/
+.social-icons {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+.container-social a {
+    margin: 4px;
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.container-social>a>span {
+    position: relative;
+}
+
+
+.tooltip-icons {
+    padding: 5px 8px;
+    background-color: #2c2b2b;
+    text-transform: capitalize;
+    position: absolute;
+    top: -155%;
+    left: 0;
+    transform: translate(-35%, 0);
+    font-size: 11px;
+    border-radius: 6px;
+    color: rgb(163, 161, 161);
+    font-family: Roboto;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+.tooltip-icons::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border: 4px solid transparent;
+    border-top-color: #2c2b2b;
+}
+
+.container-social a:hover .tooltip-icons {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*hamburger-menu*/
+.hamburger-menu {
+    width: 20%;
+    background-color: #ffffff;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    width: 15px;
+    height: 2px;
+    background-color: #121213;
+    position: relative;
+}
+
+.line::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #121213;
+    position: absolute;
+    top: 260%;
+    left: 0;
+}
+
+.line::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #121213;
+    position: absolute;
+    bottom: 260%;
+    left: 0;
+}
+
+/*MAIN*/
+/*HERO*/
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/home_slider_2-2.jpg), no-repeat 50% 50%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*HERO-CONTENT*/
+.hero-content {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+.hero-content h1 {
+    font-weight: normal;
+    font-size: 130px;
+    text-transform: capitalize;
+}
+
+.hero-content p {
+    font-size: 25px;
+    background-color: rgba(63, 219, 240, 0.5);
+    text-transform: uppercase;
+    padding: 5px 15px;
+    font-family: Abril;
+}
+
+.hero-content a {
+    border: 2px solid #ffffff;
+    padding: 17px 35px;
+    display: inline-block !important;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.hero-buttons {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+/*RESPONSIVE*/
+@media(max-width:1220px) {
+    nav ul {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .logo {
+        margin: 0;
+        padding: 20px 0 20px 16px;
+        width: 38%;
+        border-right: 2px solid #ffffff;
+    }
+
+    .logo img {
+        width: 90%;
+    }
+
+    .social-icons {
+        margin: 0;
+        width: 40%;
+    }
+
+    .hero {
+        background-position: 55% 50%;
+    }
+
+    .hero-content h1 {
+        font-size: 100px;
+    }
+
+    .hero-content a {
+        padding: 7px 15px;
+        font-size: 15px;
+    }
+}
+
+@media(max-width:640px) {
+    .logo {
+        flex: 1;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    .social-icons {
+        display: none;
+    }
+
+    .hero-content h1 {
+        font-size: 80px;
+        margin-bottom: 30px;
+    }
+}
