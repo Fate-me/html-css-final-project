@@ -81,15 +81,14 @@ li {
 
 a {
     text-decoration: none;
+    color: #ffffff;
 }
 
-:root {
-    --primery-color: #293f46;
-
-}
 
 body {
     font-family: Roboto;
+    color: #ffffff;
+    background-color: #121213;
 }
 
 h1,
@@ -98,7 +97,6 @@ h3,
 h4,
 h5,
 h6 {
-
     font-family: Abril;
 }
 
@@ -135,6 +133,7 @@ button {
     border: 8px solid transparent;
     border-top-color: #5e5d5d;
 }
+
 
 /*HEADER*/
 header {
@@ -183,9 +182,8 @@ nav ul li a {
     height: 100%;
     align-items: center;
     padding: 0 25px;
-    color: #ffffff;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -236,20 +234,17 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    color: #ffffff;
     border-bottom: 2px solid #ffffff;
 }
 
 .container-social a {
     margin: 4px;
-    color: #ffffff;
     font-size: 17px;
 }
 
 .container-social>a>span {
     position: relative;
 }
-
 
 .tooltip-icons {
     padding: 5px 8px;
@@ -324,7 +319,7 @@ nav ul li a {
 .hero {
     width: 100%;
     height: 100vh;
-    background: url(../images/home_slider_2-2.jpg), no-repeat 50% 50%;
+    background: url(../images/home_slider_2-2.jpg), no-repeat 40% 50%;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -334,7 +329,6 @@ nav ul li a {
 
 /*HERO-CONTENT*/
 .hero-content {
-    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -349,7 +343,7 @@ nav ul li a {
 }
 
 .hero-content p {
-    font-size: 25px;
+    font-size: 30px;
     background-color: rgba(63, 219, 240, 0.5);
     text-transform: uppercase;
     padding: 5px 15px;
@@ -358,11 +352,11 @@ nav ul li a {
 
 .hero-content a {
     border: 2px solid #ffffff;
-    padding: 17px 35px;
+    padding: 18px 40px;
     display: inline-block !important;
-    color: #ffffff;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 17px;
 }
 
 .hero-buttons {
@@ -371,14 +365,383 @@ nav ul li a {
     gap: 20px;
 }
 
+/*WELCOME*/
+.welcome {
+    width: 100%;
+}
+
+.inner-welcome {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    padding: 85px 0;
+    text-align: center;
+}
+
+.inner-welcome h2 {
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.inner-welcome img {
+    height: 50px;
+}
+
+.inner-welcome p {
+    font-size: 16px;
+    line-height: 2em;
+    margin-bottom: 30px;
+    max-width: 1200px;
+}
+
+/*MEET-STUDIO*/
+.meet-studio {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.studio-content {
+    width: 50%;
+    height: 25.7vw;
+}
+
+.inner-studio {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.inner-studio h2 {
+    font-size: 37px;
+    font-weight: normal;
+}
+
+.inner-studio span {
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.inner-studio p {
+    font-size: 16px;
+    line-height: 2em;
+    width: 90%;
+}
+
+.inner-studio a {
+    padding: 13px 32px;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: 2px solid #ffffff;
+}
+
+.studio-picture {
+    width: 50%;
+    display: flex;
+    background-image: url(../images/1_collection1.jpg);
+    background-repeat: no-repeat;
+    background-position: 55% 5%;
+    background-size: 140%;
+    position: relative;
+}
+
+.glass {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*TICKET*/
+.ticket {
+    width: 100%;
+    height: 615px;
+    padding: 0px 35px;
+    background-image: url(../images/quote_bg_studio1.jpg);
+    background-repeat: no-repeat;
+    background-position: 0% 70%;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+/*LIVE*/
+.live {
+    width: 750px;
+    height: 39%;
+    padding: 0px 90px 0px 63px;
+    border: 10px solid #ffffff;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: lighter;
+}
+
+.live h2 {
+    transform: translate(0, -6%);
+    font-weight: normal;
+    line-height: 1.1em;
+}
+
+/*SIGNUP*/
+.signup {
+    width: 370px;
+    height: 39%;
+    padding: 0px 15px;
+    background-color: rgba(63, 219, 240, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ffffff;
+    padding: 17px 40px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/*TEAM*/
+.team {
+    width: 100%;
+    height: auto;
+    padding: 70px 0 100px 0;
+}
+
+.container-team {
+    width: 93%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-team h2 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.container-team p {
+    font-weight: 320;
+    line-height: 2em;
+    font-size: 16px;
+}
+
+/*MEMBERS*/
+.members {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.member {
+    width: 22%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.member figure {
+    width: 100%;
+}
+
+.members figure img {
+    width: 100%;
+}
+
+.members figcaption {
+    margin-top: 25px;
+}
+
+.members figcaption h3 {
+    font-size: 33px;
+    font-weight: 100;
+}
+
+.members figcaption p {
+    font-weight: 300;
+}
+
+/*SERVICES*/
+.services {
+    width: 100%;
+    height: 26vw;
+    min-height: 510px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #141416;
+}
+
+/*PICTURE-SERVICES*/
+.picture-services {
+    width: 50%;
+    height: 100%;
+    background-image: url(../images/girl_covered1.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+/*CONTENT-SERVICES*/
+.content-services {
+    width: 50%;
+    height: 97%;
+    background-color: #4ca9b4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 13px;
+    padding: 0 5%;
+    text-align: center;
+}
+
+.content-services h3 {
+    font-size: 40px;
+    font-weight: 200;
+}
+
+.content-services p {
+    line-height: 1.9em;
+    font-weight: 350;
+}
+
+.content-services :nth-child(2) {
+    margin-bottom: 15px;
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.content-services a {
+    padding: 12px 30px;
+    border: 2px solid #ffffff;
+    font-size: 17px;
+    margin-top: 8px;
+}
+
+/*TRENDS*/
+.trends {
+    width: 100%;
+    padding: 120px 0;
+    background-color: #141416;
+}
+
+.trends-container {
+    width: 95%;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+}
+
+/*CONTENT-TRENDS*/
+.content-trends {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.content-trends h2 {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.content-trends p {
+    line-height: 2em;
+}
+
+/*PICTURE-TRENDS*/
+.picture-trends {
+    width: 100%;
+}
+
+.picture-trends img {
+    width: 93%;
+}
+
 /*RESPONSIVE*/
-@media(max-width:1220px) {
-    nav ul {
-        display: none;
+/*LAPTOP L*/
+@media(max-width:1440px) {
+    nav ul li a {
+        font-size: 13px;
     }
 
-    .hamburger-menu {
-        display: flex;
+    .studio-content {
+        height: auto;
+    }
+
+    .studio-content p {
+        font-size: 16px;
+    }
+
+    .inner-studio {
+        padding: 75px 0;
+    }
+
+    .inner-studio p {
+        font-size: 13px;
+    }
+
+    .content-services {
+        padding: 0 3%;
+    }
+
+    .content-services :nth-child(2) {
+        margin-bottom: 12px;
+        font-size: 15px;
+    }
+
+    .content-services p {
+        font-size: 13px;
+    }
+
+    .content-services a {
+        padding: 10px 27px;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+}
+
+/*LAPTOP*/
+@media(max-width:1024px) {
+    nav ul {
+        display: none;
     }
 
     .logo {
@@ -397,6 +760,10 @@ nav ul li a {
         width: 40%;
     }
 
+    .hamburger-menu {
+        display: flex;
+    }
+
     .hero {
         background-position: 55% 50%;
     }
@@ -406,26 +773,258 @@ nav ul li a {
     }
 
     .hero-content a {
-        padding: 7px 15px;
+        padding: 9px 15px;
+        font-size: 13px;
+    }
+
+    .inner-welcome p {
+        margin-bottom: 10px;
+    }
+
+    .studio-content {
+        width: 100%;
+    }
+
+    .studio-picture {
+        width: 100%;
+        height: 50vw;
+    }
+
+    .ticket {
+        height: 380px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .live {
+        width: 750px;
+        height: 58%;
+        padding: 40px 30px 50px 50px;
+        border: 10px solid #ffffff;
+        font-size: 25px;
+    }
+
+    .live h2 {
+        transform: translate(0, 0);
+    }
+
+    .signup {
+        width: 370px;
+        height: 57%;
+        padding: 75px 10px;
+    }
+
+    .container-team h3 {
+        font-size: 35px;
+    }
+
+    .members {
+        width: 98%;
+        max-width: 810px;
+    }
+
+    .member {
+        width: 48%;
+        max-width: 310px;
+        margin-bottom: 35px;
+    }
+
+    .services {
+        height: auto;
+    }
+
+    .picture-services {
+        width: 100%;
+        height: 52vw;
+    }
+
+    .content-services {
+        width: 100%;
+        padding: 10%;
+    }
+
+    .content-services p {
         font-size: 15px;
     }
+
+    .content-services :nth-child(2) {
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+
+    .content-services a {
+        padding: 12px 30px;
+        font-size: 17px;
+        margin-top: 8px;
+    }
+
+}
+
+/*TABLET*/
+@media(max-width:768px) {
+    .inner-welcome {
+        width: 92%;
+    }
+
+    .inner-studio {
+        width: 85%;
+    }
+
+    .studio-picture {
+        height: 52vw;
+    }
+
+    .ticket {
+        gap: 30px;
+    }
+
+    .live {
+        height: 58%;
+        padding-left: 35px;
+    }
+
+    .signup {
+        height: 58%;
+    }
+
+    .trends-container {
+        width: 90%;
+    }
+
+    .content-trends h2 {
+        font-size: 35px;
+    }
+
 }
 
 @media(max-width:640px) {
+    .ticket {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 75px 0;
+        gap: 20px;
+    }
+
+    .live {
+        width: 90%;
+        height: auto;
+        padding-top: 6%;
+        padding-bottom: 10%;
+        padding-left: 35px;
+        padding-right: 10px;
+    }
+
+    .signup {
+        width: 90%;
+        height: auto;
+        padding-top: 6%;
+        padding-bottom: 6%;
+    }
+}
+
+/*MOBILE L*/
+@media(max-width:425px) {
     .logo {
         flex: 1;
     }
 
     .logo img {
-        width: 100%;
+        width: 90%;
     }
 
     .social-icons {
         display: none;
     }
 
+    .hero {
+        background-position: 49% 50%;
+    }
+
     .hero-content h1 {
         font-size: 80px;
         margin-bottom: 30px;
     }
+
+    .hero p {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .inner-welcome {
+        width: 85%;
+    }
+
+    .inner-welcome h2 {
+        font-size: 29px;
+    }
+
+    .inner-studio h2 {
+        font-size: 30px;
+    }
+
+    .live {
+        width: 85%;
+
+    }
+
+    .live {
+        font-size: 21px;
+        padding-left: 25px;
+    }
+
+    .signup {
+        width: 85%;
+    }
+
+    .members {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-team {
+        width: 85%;
+    }
+
+    .container-team h2 {
+        font-size: 32px;
+    }
+
+    .member {
+        width: 95%;
+        margin-bottom: 40px;
+    }
+
+    .members figcaption {
+        margin-top: 15px;
+    }
+
+    .member figcaption h3 {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+
+    .content-services h3 {
+        font-size: 33px;
+    }
+
+    .content-services :nth-child(2) {
+        font-size: 13px;
+    }
+
+    .content-services p {
+        font-size: 14px;
+    }
+
+    .content-trends h2 {
+        font-size: 30px;
+    }
+}
+
+/*MOBILE S*/
+@media(max-width:320px) {
+
+    .hero h1 {
+        font-size: 60px;
+    }
+
 }
