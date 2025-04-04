@@ -3,7 +3,7 @@ This project is the final assignment of my HTML & CSS course. It is a fully resp
 Modern layout techniques like Flexbox, Grid, and Positioning have been used.
 
 🚀Live Demo
-  You can view the project liv at :https://fate-me.github.io/html-css-final-proje
+  You can view the project liv at :https://fate-me.github.io/html-css-final-project/
   
  ⚡ Features 
  - Fully responsive design
