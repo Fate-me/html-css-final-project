@@ -6,7 +6,7 @@ Modern layout techniques like Flexbox, Grid, and Positioning have been used.
 
 🚀Live Demo
 
-  You can view the project liv at :https://fate-me.github.io/html-css-final-project/
+  You can view the project live at :https://fate-me.github.io/html-css-final-project/
 
   
  ⚡ Features 
