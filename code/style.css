@@ -135,6 +135,11 @@ button {
     border-top-color: #5e5d5d;
 }
 
+@media screen {
+    html {
+        scroll-behavior: smooth;
+    }
+}
 
 /*HEADER*/
 header {
@@ -1152,7 +1157,6 @@ footer {
     right: 70px;
     border-radius: 4px 4px 0 0;
     font-weight: bolder;
-    scroll-behavior: smooth;
 }
 
 .less:hover {
